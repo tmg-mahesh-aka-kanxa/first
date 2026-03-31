@@ -1,2 +1,1 @@
-print("mahesh")
-print(4)
+print('i am mahesh')
