@@ -1,4 +1,5 @@
 # first
 this is first repository
 <br>
-Author - Mahesh Tamang
+Author - Mahesh Tamang AKA KANXA
+
