@@ -3,23 +3,26 @@ scissor = 1
 paper = 2
 rock = 3
 '''
+one = "scissor"
+two = "paper"
+three = "rock"
+
 import random
 
 print("WELCOME TO MY SCISSOR PAPER ROCK GAME !!!!!!!!")
-print("Chose 1 for scissor or 2 for paper or 3 for rock")
 
-userinput = int(input("Enter your choice :- ",))
+userinput = input("Enter your choice :-- ")
 
-bot = random.randint(1,3)
-print("Bot chose ",bot)
+bot = random.choice(["rock","paper","scissor"])
+print("Bot chose :-- ",bot)
 
 if(userinput == bot) :
     print("TIE !!!!!!!")
 
-elif(bot == 1 and userinput == 2 or bot == 2 and userinput == 1 or bot == 3 and userinput == 1):
+elif(bot == one and userinput == two or bot == two and userinput == one or bot == three and userinput == one):
     print("YOU LOSE !!!!!!!!")
 
-elif(userinput == 1 and bot == 2 or userinput == 2 and bot == 1 or userinput == 3 and bot == 1):
+elif(userinput == 1 and bot == two or userinput == two and bot == one or userinput == three and bot == one):
     print("YOU WIN !!!!!!!!!")
 
 else :
