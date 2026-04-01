@@ -6,7 +6,7 @@ rock = 3
 scissor = "scissor"
 paper = "paper"
 rock = "rock"
-playagain = "sadf"
+playagain = ""
 
 import random
 def mygame():
@@ -24,16 +24,19 @@ def mygame():
         print("(°_°) YOU WIN !!!!!!!!")
 
     elif(userinput == rock and bot == paper or userinput == paper and bot == scissor or userinput == scissor and bot == rock):
-        print("(°n°) YOU LOSE !!!!!!!!!")
+        print("(°_°) YOU LOSE !!!!!!!!!")
 
     else :
         print("invalid input")
 
+    global playagain
     print("Press enter to play again")
-    playagain = input()
-
+    x = input()
+    playagain = x
+    
 
 
 
 while playagain == "":
     mygame()
+    
